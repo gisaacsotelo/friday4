@@ -1,8 +1,9 @@
 // Import React and useState hook from react
-import React, { useState } from 'react'
+import React from 'react'
 // IMPORT COMPONENTS
-import Header from './Header'
-import Footer from './Footer'
+import Header from '../modules/Header'
+import Footer from '../modules/Footer'
+import Form from '../modules/Form'
 
 function Home() {
   // const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function Home() {
       <p>
         Here is Home Homs
       </p>
+      <Form />
       <Footer />
     </>
   )

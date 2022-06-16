@@ -56,11 +56,13 @@ $     npm install
 STUFF WE ARE USING WHILE BUILDING:
 - React 
   Components
-  Hooks: useParams
+  Hooks: useParams, useState
   Routing
 
 - Forms
 
+? WHERE ARE THEY USED:
+  useState - Form
 
 
 
@@ -68,4 +70,10 @@ STUFF WE ARE USING WHILE BUILDING:
 ^ Stretch ideas:
 
   - Add route to redirect any route that is 404 to Muahaha
+
+TODO ------------------------------------
+TODO ---- QUESTIONS
+
+How we redirect on React? just create paths and define element?
+
 */
