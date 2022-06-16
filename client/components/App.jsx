@@ -5,9 +5,9 @@ import { Route, Routes } from 'react-router-dom'
 
 // IMPORT COMPONENTS
 import Home from './views/Home'
+import Outfit from './views/Outfit'
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <div>
@@ -20,6 +20,7 @@ function App() {
         We need a route for '/outfit/:name' that renders Outfit component
         We need a new route for 
         */}
+          <Route path={`/outfit/:${Home.homeName}`} element={<Outfit />} />
       </Routes>
     </div>
   )

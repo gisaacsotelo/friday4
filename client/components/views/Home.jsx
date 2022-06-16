@@ -6,11 +6,11 @@ import Footer from '../modules/Footer'
 import Form from '../modules/Form'
 
 function Home() {
-  const [ name, setName ] = useState('')
+  const [ homeName, setHomeName ] = useState('')
 
   const getData = (formName) => {
     console.log("Coming from Form component to Home view parent: ", formName)
-    setName(formName)
+    setHomeName(formName)
   }
 
 
@@ -19,7 +19,7 @@ function Home() {
       <Header />
       <h2>Dont be shy, build a clown</h2>
       <p>
-        Here is Home {name}
+        Here is Home{`: ${homeName}`}
       </p>
       <Form onSubmit={ getData }/>
       <Footer />
