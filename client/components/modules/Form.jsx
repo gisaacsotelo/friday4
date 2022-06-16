@@ -1,30 +1,29 @@
 // Import React ans useState from react
 import React, { useState } from 'react'
 
-function Form() {
+function Form({ onSubmit }) {
   // trying out CONTROLLED COMPONENTS
-  const [ name, setName ] = useState('')
+  const [ formName, setFormName ] = useState('')
 
   // handles change of name
-  const handleChange = (evt) => {
-    setName(evt.target.value)
+  const handleChange = (e) => {
+    setFormName(e.target.value)
   }
   // handles submitting
-  const handleSubmit = (evt) => {
-    evt.preventDefault()
+  const handleSubmit = (e) => {
+    e.preventDefault() // prevent default re render of the page
     // todo: I want to rerote on submit to: '/outfit/{name}'
-    console.log(`A name was submitted homs: ${name}`)
+    // console.log(`A name was submitted homs: ${name}`)
+    onSubmit(formName)
   }
 
   return (
     <form onSubmit={handleSubmit}>
       <label>
         Name:
-        <input type="text" value={name} onChange={handleChange} placeholder="Write a Name"/>
+        <input type="text" value={formName} onChange={handleChange} placeholder="Write a Name"/>
       </label>
-      <input type="submit" value="Submit"/>
-        {/* Submit
-      </input> */}
+      <input type="submit"/>
     </form>
   )
   
