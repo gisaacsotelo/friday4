@@ -14,7 +14,7 @@ const App = () => {
       <h1>Count: {count}</h1>
       <button onClick={() => setCount(count + 1)}>Click me!</button>
       <Routes>
-        <Route path='/test' element={Home} />
+        <Route path='/home' element={Home} />
       </Routes>
     </div>
   )
