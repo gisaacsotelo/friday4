@@ -15,6 +15,7 @@ function Form({ onSubmit }) {
     // todo: I want to rerote on submit to: '/outfit/{name}'
     // console.log(`A name was submitted homs: ${name}`)
     onSubmit(formName)
+
   }
 
   return (
