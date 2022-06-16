@@ -1,5 +1,10 @@
+// Import useState hook from react
 import React, { useState } from 'react'
+// Import Route and Routes module from react
 import { Route, Routes } from 'react-router-dom'
+
+// IMPORT COMPONENTS
+import Home from './Home'
 
 const App = () => {
   const [count, setCount] = useState(0)
@@ -9,7 +14,7 @@ const App = () => {
       <h1>Count: {count}</h1>
       <button onClick={() => setCount(count + 1)}>Click me!</button>
       <Routes>
-        <Route path='/test' element={<h1>TEST ROUTE</h1>} />
+        <Route path='/test' element={Home} />
       </Routes>
     </div>
   )
