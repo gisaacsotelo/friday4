@@ -52,6 +52,18 @@ $     npm install
 *   - Muahaha - Save button directs here, since we dont save stuff atm (Probs stretch)
 
 
+^ -------------
+STUFF WE ARE USING WHILE BUILDING:
+- React 
+  Components
+  Hooks: useParams
+  Routing
+
+- Forms
+
+
+
+
 ^---------------------------------------------------------------------------------------------
 ^ Stretch ideas:
 
