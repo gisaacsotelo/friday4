@@ -6,7 +6,7 @@ import { Route, Routes } from 'react-router-dom'
 // IMPORT COMPONENTS
 import Home from './views/Home'
 
-const App = () => {
+function App() {
   const [count, setCount] = useState(0)
 
   return (
